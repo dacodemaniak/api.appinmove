@@ -1,0 +1,7 @@
+<p>Un nouveau message vient d'être envoyé depuis le site web AppInMove :</p>
+
+<ul>
+	{% for content in  mailDatas %}
+		<li>{{ content.libelle }} : <strong>{{ content.value }}</strong>
+	{% endfor %}
+</ul>
